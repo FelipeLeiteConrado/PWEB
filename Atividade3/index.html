@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa: Arquitetura de Software</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Arquitetura de Software</h1>
+        <p>Atividade 3 - Programação Web (PWEB)</p>
+        <nav>
+            <ul>
+                <li><a href="#introducao">Introdução</a></li>
+                <li><a href="#conceitos">Conceitos</a></li>
+                <li><a href="#padroes">Padrões</a></li>
+                <li><a href="#criterios">Critérios de Escolha</a></li>
+                <li><a href="#tendencias">Tendências</a></li>
+                <li><a href="#conclusao">Conclusão</a></li>
+                <li><a href="#referencias">Referências</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <section id="introducao">
+                <h2>1. Introdução</h2>
+                <p>A <strong>Arquitetura de Software</strong> representa a estrutura fundamental de um sistema computacional, englobando seus componentes de software, as propriedades visíveis externamente desses componentes e os relacionamentos entre eles.</p>
+                <p>Em projetos modernos de tecnologia, uma arquitetura bem definida é crucial para garantir a qualidade, escalabilidade, manutenibilidade e alinhamento com as necessidades estratégicas do negócio.<br>Abaixo está um diagrama conceitual sobre arquitetura:</p>
+                <img src="https://via.placeholder.com/600x300?text=Arquitetura+de+Software" alt="Ilustração sobre Arquitetura de Software">
+            </section>
+
+            <section id="conceitos">
+                <h2>2. Conceitos Fundamentais e Importância</h2>
+                <p>A arquitetura de software atua como a espinha dorsal de um sistema, definindo decisões de alto nível que impactam diretamente a evolução e o ciclo de vida da aplicação.</p>
+                <ul>
+                    <li><strong>Diferença entre Arquitetura e Design:</strong> A arquitetura foca na estrutura global e decisões estratégicas; o design trata dos detalhes de implementação.</li>
+                    <li><strong>Atributos de Qualidade:</strong> Características operacionais como escalabilidade, resiliência, manutenibilidade e segurança.</li>
+                    <li><strong>Análise de Trade-offs:</strong> Todas as decisões envolvem compensações entre atributos de qualidade, custos e complexidade.</li>
+                </ul>
+            </section>
+
+            <section id="padroes">
+                <h2>3. Padrões Arquiteturais (Architectural Patterns)</h2>
+                <p>Os padrões oferecem soluções comprovadas para problemas recorrentes:</p>
+                <ul>
+                    <li><strong>Arquitetura Monolítica:</strong> Todas as funcionalidades em uma única unidade implantável.
+                        <ul>
+                            <li><em>Vantagens:</em> Simplicidade inicial de desenvolvimento e testes.</li>
+                            <li><em>Desvantagens:</em> Dificuldade de escalabilidade individual de componentes.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Arquitetura de Microserviços:</strong> Decomposição em pequenos serviços independentes que se comunicam via rede.
+                        <ul>
+                            <li><em>Vantagens:</em> Implantação independente e escalabilidade granular.</li>
+                            <li><em>Desvantagens:</em> Complexidade operacional elevada e latência de rede.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Arquitetura Baseada em Eventos (EDA):</strong> Padrão assíncrono onde componentes reagem a eventos produzidos e consumidos via barramentos de mensagens.</li>
+                    <li><strong>Arquitetura em Camadas (N-Tier):</strong> Organização em divisões horizontais (Apresentação, Regras de Negócio, Dados).</li>
+                </ul>
+            </section>
+
+            <section id="criterios">
+                <h2>4. Critérios para Escolha da Arquitetura</h2>
+                <p>A seleção do estilo arquitetural deve considerar os seguintes fatores:</p>
+                <ol>
+                    <li><strong>Complexidade do Domínio de Negócio:</strong> Regras simples favorecem monólitos; domínios extensos exigem desacoplamento.</li>
+                    <li><strong>Maturidade da Equipe:</strong> Exigência de práticas avançadas de CI/CD e infraestrutura.</li>
+                    <li><strong>Time-to-Market e Custos:</strong> Priorização da velocidade de entrega inicial versus longevidade.</li>
+                    <li><strong>Requisitos Críticos:</strong> Alto volume de requisições simultâneas requer escalabilidade horizontal.</li>
+                </ol>
+            </section>
+
+            <section id="tendencias">
+                <h2>5. Tendências Atuais</h2>
+                <ul>
+                    <li><strong>Arquitetura Serverless (FaaS):</strong> Computação sob demanda gerenciada por provedores de nuvem.</li>
+                    <li><strong>Monólitos Modulares:</strong> Combinação do isolamento de domínios com a simplicidade de implantação monolítica.</li>
+                    <li><strong>Micro Frontends:</strong> Aplicação dos conceitos de microserviços à camada de interface visual.</li>
+                </ul>
+            </section>
+
+            <section id="conclusao">
+                <h2>6. Conclusão</h2>
+                <p>A arquitetura de software é uma disciplina determinante para a sustentabilidade de sistemas corporativos. Não existe um único padrão perfeito para todos os contextos, exigindo análise constante de trade-offs.</p>
+            </section>
+
+            <section id="referencias">
+                <h2>7. Referências</h2>
+                <ul>
+                    <li>BASS, Len; CLEMENTS, Paul; KAZMAN, Rick. <em>Software Architecture in Practice</em>. 4. ed. Boston: Addison-Wesley, 2021.</li>
+                    <li>FOWLER, Martin. <em>Patterns of Enterprise Application Architecture</em>. Boston: Addison-Wesley, 2002.</li>
+                    <li>NEWMAN, Sam. <em>Building Microservices</em>. 2. ed. Sebastopol: O'Reilly Media, 2021.</li>
+                    <li> Mais detalhes podem ser consultados no <a href="https://martinfowler.com" target="_blank" rel="noopener">site oficial de Martin Fowler</a>.</li>
+                </ul>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Projeto Desenvolvido para a disciplina de PWEB</p>
+    </footer>
+
+</body>
+</html>
