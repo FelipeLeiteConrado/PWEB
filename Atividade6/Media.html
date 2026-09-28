@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <script>
+        let nome1 = prompt("Digite o nome do aluno 1")
+        let nome2 = prompt("Digite o nome do aluno 2")
+        let notas = 0
+
+        for(let i=0; i < 2; i++) {
+            for(let j=0; j < 4; j++){
+                notas+= parseFloat((prompt(`Nota ${j+1} do aluno ${i+1}`)));
+            }
+        }
+        
+        alert(`A média é ${notas/8}`)
+        
+    </script>
+</body>
+</html>
